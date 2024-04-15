@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2 class="mb-4">Simple Calculator</h2>
+  <div class="row">
+    <div class="col-md-3">
+      <input type="text" id="num1" class="form-control mb-2" placeholder="Enter first number">
+    </div>
+    <div class="col-md-3">
+      <select id="operation" class="form-control mb-2">
+        <option value="operators">Select Operators</option>
+        <option value="add">Addition(+)</option>
+        <option value="subtract">Subtraction(-)</option>
+        <option value="multiply">Multiplication(*)</option>
+        <option value="divide">Division(/)</option>
+      </select>
+    </div>
+    <div class="col-md-3">
+      <input type="text" id="num2" class="form-control mb-2" placeholder="Enter second number">
+    </div>
+    <div class="col-md-3">
+      <button id="calculateBtn" class="btn btn-primary btn-block mb-2">Calculate</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div id="result" class="alert alert-info" role="alert"></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
